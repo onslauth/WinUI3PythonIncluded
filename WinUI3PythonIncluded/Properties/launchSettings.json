@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI3PythonIncluded (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI3PythonIncluded (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
