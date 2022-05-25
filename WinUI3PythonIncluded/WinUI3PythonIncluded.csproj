@@ -25,7 +25,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.3" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.194" />
-    <PackageReference Include="Python.Included" Version="3.7.3.13" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -34,5 +33,8 @@
        package has not yet been restored -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnablePreviewMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Python.Included\Python.Included\Python.Included.csproj" />
   </ItemGroup>
 </Project>
